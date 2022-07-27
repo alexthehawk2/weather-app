@@ -1,3 +1,2 @@
-const h1 = document.querySelector('h1')
+import './style.css'
 
-h1.textContent = 'Hello World From Js'
