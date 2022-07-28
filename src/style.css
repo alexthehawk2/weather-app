@@ -97,13 +97,22 @@ input::placeholder{
     padding: 15px; 
     display: flex;
     justify-content: space-around;
+    font-family: "robotoText";
 }
 .weather-data{
     height: 100%;
     width: 50%;
-    background-color: blue;
+    background-color: #3AB4F2;
     text-align: center;
     border-radius: 15px;
+}
+.weather-data > img{
+    height: 50px;
+    width: 50px;
+}
+.description{
+    padding: 0;
+    margin: 0;
 }
 .other-info{
     text-align: left;
@@ -115,7 +124,6 @@ input::placeholder{
         /* footer */
 footer{
     font-family: "robotoText";
-    box-sizing: border-box;
     position: absolute;
     bottom: 0;
     left: 0;
