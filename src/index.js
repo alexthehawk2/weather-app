@@ -8,20 +8,14 @@ async function run(){
     changeDom(data)
     showDate()
     //search 
-    input.addEventListener('keypress', function (e) {
+    input.addEventListener('keypress',async function (e) {
         if(e.key === 'Enter'){
             //  checks for user inputs in order to send this to the API
             if(input.value !== '' && /^[a-zA-Z ]+$/.test(input.value)){
                 let value = input.value.trim()
                 input.value = ''
-                // const search = getWeather(value)
-                // changeDom(search)
-                // showDate()
-                (async function (value) {
-                    const search = await getWeather(value)
-                    changeDom(search)
-                    showDate()
-                })(value);
+                const search = await getWeather(value)
+                changeDom(search)
             }else{
                 alert("Please enter a valid city name")
                 input.value = ''

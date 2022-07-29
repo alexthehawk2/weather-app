@@ -21,6 +21,6 @@ export default async function getWeather(cityName){
         const parsedData = parseData(data)
         return parsedData
     } catch(err){
-        console.log(err);
+        alert("city not found, Try again");
     }
 }
